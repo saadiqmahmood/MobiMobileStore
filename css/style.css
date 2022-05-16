@@ -1,0 +1,398 @@
+.container{
+    background-color:lightgray;
+    height: auto;
+    width: 100%;
+}
+
+.row{
+    height: auto;
+    width: auto;
+    background-color: lightgray;
+
+}
+
+.col{
+    background-color: #f6f6f6;
+    width: 100%;
+}
+
+.aboutbody{
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 1000px;
+}
+
+.contactbody{
+    background-color:#f6f6f6;
+    margin: auto;
+    width: 50%;
+    height: 550px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color:lightgray;
+    margin-top: 0px;
+}
+
+.footerdetails{
+    text-align: center;
+    position: relative;
+    top: 0px;
+    color:#174b86
+}
+/* LOGO AND LOGO TEXT */
+.logo{ 
+    height: 40px;
+    position: relative;
+    top: -35px; /* FOR ADJUSTING LOGO/LOGO TEXT HORIZONTALLY */
+    /* STYLES BELOW FROM "https://www.w3schools.com/howto/howto_css_image_center.asp" FOR CENTERING IMAGE */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.logotext{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600;
+    color: #174b86;
+    position: relative;
+    top: 40px; /* FOR ADJUSTING LOGO/LOGO TEXT HORIZONTALLY */
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+}
+/* NAVICGATION MENU CONTENTS */
+.hometext{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600;
+    color: #174b86;
+    /* PADDING-LEFT FEATURE TO SHIFT IT TO THE RIGHT TO AVOID BEING TOO CLOSE TO THE LOGO */
+    padding-left: 10%;
+    position: relative;
+    top: 5px;
+}
+
+.shoptext{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600;
+    color: #174b86;
+    padding-left: 5%; /* FOR MAINTAINING A GOOD AND EQUAL SPACE BETWEEN THE TEXTS */
+    position: relative;
+    top: 5px;
+}
+
+.aboutustext{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600;
+    color: #174b86;
+    padding-left: 5%; /* FOR MAINTAINING A GOOD AND EQUAL SPACE BETWEEN THE TEXTS */
+    position: relative;
+    top: 5px;
+}
+
+.contactustext{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600;
+    color: #174b86;
+    padding-left: 6%; /* FOR MAINTAINING A GOOD AND EQUAL SPACE BETWEEN THE TEXTS */
+    position: relative;
+    top: 5px;
+}
+  
+.homeimages{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative; 
+    width: 100%;
+}
+
+.promo{
+    width: 300px;
+    margin: 45px 40px;
+}
+
+/* SHOP TABLE */
+
+table{
+    border: 2px solid whitesmoke;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.phones{
+    height: 150px;
+    padding-left: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phonebox{
+    background-color: whitesmoke;
+    width: 30%;
+}
+
+.descriptionbox{
+    width: 70%;
+    background-color: white;
+}
+
+.results{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+.description{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+.price{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.addtocart{
+    margin-left: 10px;
+    background-color: #174b86;
+    border-radius: 20px;
+    border: 2px solid #174b86;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.addtocart:hover{
+    background-color: white;
+    color: #174b86;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* INFORMATION ABOUT BLU MOBILE */
+
+.aboutusinfo{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+/* CONTACT PAGE EMAIL */
+
+.contact{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.email{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 300;
+    position: relative;
+    top: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* CONTACT PAGE FORM */
+
+form{
+	padding: 1em;
+}
+
+::placeholder{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color:dimgray;
+    padding: 5px;
+  }
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+}
+
+input[type=submit]{
+    background-color: #174b86;
+    border-radius: 20px;
+    border: 2px solid #174b86;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    color: #174b86;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* SENT MESSAGE AFTER FORM SUBMISSION */
+
+.senttext{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+  
+/* SHOPPING CART SECTION */
+
+.col-sm-3{
+    border-collapse: collapse;
+    border-radius:5px;
+    padding:1.5em;
+}
+.cartbutton, input[type="submit"]{ 
+    border: 2px solid #174b86;
+    color: white;
+    transition-duration: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #174b86;
+    padding:0.6em 1em;
+    font-size: 16px;
+    line-height:1; 
+    border-radius: 20px;
+}
+
+.cartbutton:hover{
+    background-color: white;
+    color: #174b86;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+.cart-table{
+    margin-bottom:1em;
+    border-collapse:collapse;
+}
+
+.cart-table td, .cart-table th{
+    text-align:left;
+    padding:0.25em 1em;
+    border-bottom:1px solid #E0E4CC;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+#carttotals{
+    margin-right:0;
+    margin-left:auto;
+}
+
+.cart-buttons{
+    width:auto;
+    margin-right:0;
+    margin-left:auto;
+    display:flex;
+    justify-content:flex-end;
+    padding:1em 0;
+}
+#emptycart{
+    margin-right:1em;
+}
+
+.cart-table td:nth-last-child(1){
+    text-align:right;
+}
+
+.message {
+    border-width: 1px 0px;
+    border-style:solid;
+    border-color:#A7DBD8;
+    color:#679996;
+    padding:0.5em 0;
+    margin:1em 0;
+}
+
+/* CHECKOUT FORM */
+.input2[type=text], .input2[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* ul{
+    list-style: none;
+	padding: 0;
+	margin: 0;
+} */
+
+.textarea2 {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+}
+
+.input2[type=submit]{
+    background-color: #174b86;
+    border-radius: 20px;
+    border: 2px solid #174b86;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.input2[type=submit]:hover{
+    background-color: white;
+    color: #174b86;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
