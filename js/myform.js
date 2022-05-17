@@ -8,8 +8,6 @@ function validateform()
     var name=document.myform.name.value;
     var email=document.myform.email.value;
     var comment=document.myform.comment.value;
-    var address=document.myform.address.value;
-
     //  IF statement created. Contains three sections:
     // For name,
     if (name==null || name==""){
@@ -25,9 +23,6 @@ function validateform()
     else if (comment==null || comment==""){
         alert("Please enter comment");
         return false;
-    }
-    else if (address==null || address==""){
-        alert("Please enter address")
     }
     // Close function
 }
