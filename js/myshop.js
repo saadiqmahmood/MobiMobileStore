@@ -10,9 +10,8 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 /* ADD TO CART functions */
-
+// OPEN FUNCTION CALLED addToCart
 function addToCart(elem) {
-    //init
     var sibs = [];
     var getprice;
     var getproductName;
@@ -117,6 +116,7 @@ function emptyCart() {
       }
     }
 }
+// MY CODE START
 
 /* Checkout on completed shopping */
 // CREATE A FUNCTION "checkoutNow"
@@ -133,3 +133,4 @@ function checkoutNow() {
 	}
     // CLOSE FUNCTION
 } 
+// END
