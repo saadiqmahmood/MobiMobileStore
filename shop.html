@@ -21,9 +21,9 @@
   </head>
   <!-- MY CODE START -->
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-sm-4 logo-header">
           <!-- LOGO AND LOGO TEXT -->
           <h1 class="logotext">BLU MOBILE</h1>
           <a
@@ -32,549 +32,508 @@
             <img alt="Blu Mobile Logo" class="logo" src="images/logo.png" />
           </a>
         </div>
-        <div class="col-sm-8">
-          <a
-            class="hometext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/index.html"
-            >HOME</a
-          >
-          <a
-            class="shoptext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/shop.html"
-            >SHOP</a
-          >
-
-          <a
-            class="aboutustext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/about.html"
-            >ABOUT</a
-          >
-
-          <a
-            class="contactustext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/contact.html"
-            >CONTACT</a
-          >
+        <div class="col-sm-5 navbar-header">
+          <ul class="navbar">
+            <li><a
+              class="navitems"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/index.html"
+              >HOME</a
+            ></li>
+            <li><a
+              class="navitems"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/shop.html"
+              >SHOP</a
+            ></li>
+            <li><a
+              class="navitems"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/about.html"
+              >ABOUT</a
+            ></li>
+            <li><a
+              class="navitems"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/contact.html"
+              >CONTACT</a
+            ></li>
+        </ul>
+        </div>
+        <div class="col-sm-3 icon-header">
+          <a href="">
+            <img class="navicons" src="images/cart.png" alt="shoppping cart">
+          </a>
+        </div>
+        <div class="col-6 small-nav-header">
+            <a href="">
+              <img src="images/dropdown.png" alt="dropdown list menu" class="list-logo">
+            </a>
+            <div class="sub-content">
+              <ul class="sub-menu">
+                <li><a
+                  class="sub-menu-items"
+                  href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/index.html"
+                  >HOME</a
+                ></li>
+                <li><a
+                  class="sub-menu-items"
+                  href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/shop.html"
+                  >SHOP</a
+                ></li>
+                <li><a
+                  class="sub-menu-items"
+                  href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/about.html"
+                  >ABOUT</a
+                ></li>
+                <li><a
+                  class="sub-menu-items"
+                  href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/contact.html"
+                  >CONTACT</a
+                ></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-6 small-cart">
+          <a href="">
+            <img src="images/cart.png" alt="second shopping cart" class="small-cart-logo">
+          </a>
         </div>
       </div>
-      <div class="row" style="background-color: white">
-        <div class="col-sm-5">
-          <div id="alerts"></div>
-          <p class="results">RESULTS</p>
-          <!-- PRODUCT, PRICE, DESCRIPTION, ADD TO CART -->
-          <div class="productcontainer">
-            <!-- EACH TABLE POSSESSES TWO COLUMNS. ONE COLUMN CONTAINS THE PRODUCT 
-                    IMAGE AND THE  OTHER CONSISTS OF DESCRIPTION, PRICE AND "ADD TO CART" BUTTON-->
-            <!-- EXAMPLE BELOW -->
-            <!-- OPEN TABLE -->
-            <table>
-              <tr>
-                <!-- LEFT COLUMN: PRODUCT IMAGE -->
-                <td class="phonebox">
-                  <img
-                    alt="Apple iPhone 13 (256GB) - Green"
-                    class="phones"
-                    src="images/iphone13128gb.jpg"
-                  />
-                </td>
-                <!-- RIGHT COLUMN -->
-                <td class="descriptionbox">
-                  <!-- DESCRIPTION -->
-                  <p class="description">Apple iPhone 13 (256GB) - Green</p>
-                  <!-- PRICE -->
-                  <p class="price">$759.99</p>
-                  <!-- ADD TO CART -->
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <!-- CLOSE TABLE -->
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Samsung Galaxy S22 128GB"
-                    class="phones"
-                    src="images/samsungs22.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Samsung Galaxy S22 128GB</p>
-                  <p class="price">$429.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Huawei P40 128GB Midnight Black"
-                    class="phones"
-                    src="images/huaweip40.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Huawei P40 128GB Midnight Black</p>
-                  <p class="price">$744.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="P smart 2021 128 GB Midnight Black"
-                    class="phones"
-                    src="images/huaweipsmart.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">P smart 2021 128 GB Midnight Black</p>
-                  <p class="price">$199.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Apple iPhone 11 (64GB) - Purple"
-                    class="phones"
-                    src="images/iphone11purple.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Apple iPhone 11 (64GB) - Purple</p>
-                  <p class="price">$309.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Samsung Galaxy A12 128GB Blue"
-                    class="phones"
-                    src="images/bluea12.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Samsung Galaxy A12 128GB Blue</p>
-                  <p class="price">$143.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Apple iPhone 13 Pro (128GB) - Sierra Blue"
-                    class="phones"
-                    src="images/iphone13problue.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Apple iPhone 13 Pro (128GB) - Blue</p>
-                  <p class="price">$949.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Nokia G21 64GB - Dusk"
-                    class="phones"
-                    src="images/nokiag21.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Nokia G21 64GB - Dusk</p>
-                  <p class="price">$149.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Google Pixel 4 64GB Black"
-                    class="phones"
-                    src="images/pixel6.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Google Pixel 4 64GB Black</p>
-                  <p class="price">$299.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
 
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Apple iPhone 13 (128GB) - Blue"
-                    class="phones"
-                    src="images/blue13.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Apple iPhone 13 (128GB) - Blue</p>
-                  <p class="price">$724.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Google Pixel 3A Iris 64GB"
-                    class="phones"
-                    src="images/6apixel.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Google Pixel 3A Iris 64GB</p>
-                  <p class="price">$139.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="iPhone XR (128GB) - Black"
-                    class="phones"
-                    src="images/black12.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">iPhone XR (128GB) - Black</p>
-                  <p class="price">$539.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Samsung Galaxy A52s 128 GB Mint"
-                    class="phones"
-                    src="images/a52.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Samsung Galaxy A52s 128 GB Mint</p>
-                  <p class="price">$139.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Apple AirPods 3rd Gen"
-                    class="phones"
-                    src="images/airpods.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Apple AirPods 3rd Gen</p>
-                  <p class="price">$159.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="JETech Silicone Case iPhone 11"
-                    class="phones"
-                    src="images/iphone11silicone.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">JETech Silicone Case iPhone 11</p>
-                  <p class="price">$9.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Beats Solo3 Wireless"
-                    class="phones"
-                    src="images/beatssolo3.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Beats Solo3 Wireless</p>
-                  <p class="price">$179.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Beats Studio Buds"
-                    class="phones"
-                    src="images/beats.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Beats Studio Buds</p>
-                  <p class="price">$99.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Apple Watch Series 7 Aluminium"
-                    class="phones"
-                    src="images/blackseries7.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Apple Watch Series 7 Aluminium</p>
-                  <p class="price">$369.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Apple Watch Series 7 Starlight"
-                    class="phones"
-                    src="images/roseseries7.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Apple Watch Series 7 Starlight</p>
-                  <p class="price">$369.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="AGPTEK Wireless Charger"
-                    class="phones"
-                    src="images/wirelesscharger.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">AGPTEK Wireless Charger</p>
-                  <p class="price">$13.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="iPhone Charger Cable 2m"
-                    class="phones"
-                    src="images/iphonecharger.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">iPhone Charger Cable 2m</p>
-                  <p class="price">$7.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Sony WH-CH510 Wireless Headphones"
-                    class="phones"
-                    src="images/sonywh-ch510.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Sony WH-CH510 Wireless Headphones</p>
-                  <p class="price">$35.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="JETech Screen Protector iPhone 11"
-                    class="phones"
-                    src="images/iphonescreenprotect.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">JETech Screen Protector iPhone 11</p>
-                  <p class="price">$5.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="Samsung Galaxy Watch4"
-                    class="phones"
-                    src="images/samsungwatchblack.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">Samsung Galaxy Watch4</p>
-                  <p class="price">$199.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td class="phonebox">
-                  <img
-                    alt="BEZ Case for Samsung A52S"
-                    class="phones"
-                    src="images/galaxya52case.jpg"
-                  />
-                </td>
-                <td class="descriptionbox">
-                  <p class="description">BEZ Case for Samsung A52S</p>
-                  <p class="price">$7.99</p>
-                  <button class="addtocart">Add to Cart</button>
-                </td>
-              </tr>
-            </table>
+      <div class="row shop-page-body">
+        <h1 class="product-title">
+          Products
+        </h1>
+        <div class="product-container">
+          <div class="card">
+            <div class="product-image">
+              <img alt="Apple iPhone 13 (256GB) - Green" src="images/iphone13128gb.jpg">
+            </div>
+            <div class="product-name">
+              Apple iPhone 13 (256GB) - Green
+            </div>
+            <div class="product-price">
+              $759.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
           </div>
-        </div>
-        <!-- END -->
-        <!-- CODE FROM https://www.codehim.com/collections/javascript-shopping-cart-examples-with-demo/ BUT MODIFIED -->
-        <!-- CART TABLE -->
-        <div class="col-sm-3">
-          <table class="cart-table">
-            <tr>
-              <!-- CART PRODUCT AND PRICE -->
-              <th>Product</th>
-              <th>Price</th>
-            </tr>
-            <tbody id="carttable"></tbody>
-          </table>
-          <hr />
-          <table class="cart-table" id="carttotals">
-            <tr>
-              <!-- CART ITEMS AND TOTAL -->
-              <td>Items</td>
-              <td>Total</td>
-            </tr>
-            <tr>
-              <!-- ITEMS QUANTITY AND TOTAL SET TO 0 -->
-              <td>x <span id="itemsquantity">0</span></td>
 
-              <td>$<span id="total">0</span></td>
-            </tr>
-          </table>
-          <!-- EMPTY CART AND CHECKOUT DIV -->
-          <div class="cart-buttons">
-            <!-- CREATED BUTTONS FOR EMPTY CART AND CHECKOUT -->
-            <button class="cartbutton" id="emptycart">Empty Cart</button>
-            <button class="cartbutton" id="checkout" onClick="checkoutNow()">Checkout</button>
+          <div class="card">
+            <div class="product-image">
+              <img alt="Samsung Galaxy S22 128GB" src="images/samsungs22.jpg">
+            </div>
+            <div class="product-name">
+              Samsung Galaxy S22 128GB
+            </div>
+            <div class="product-price">
+              $429.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
           </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Huawei P40 128GB Midnight Black" src="images/huaweip40.jpg">
+            </div>
+            <div class="product-name">
+              Huawei P40 128GB Midnight Black
+            </div>
+            <div class="product-price">
+              $744.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Google Pixel 4 64GB Black" src="images/pixel6.jpg">
+            </div>
+            <div class="product-name">
+              Google Pixel 4 64GB Black
+            </div>
+            <div class="product-price">
+              $299.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="P smart 2021 128 GB Midnight Black" src="images/huaweipsmart.jpg">
+            </div>
+            <div class="product-name">
+              P smart 2021 128 GB Midnight Black"
+            </div>
+            <div class="product-price">
+              $199.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Apple iPhone 11 (64GB) - Purple" src="images/iphone11purple.jpg">
+            </div>
+            <div class="product-name">
+              Apple iPhone 11 (64GB) - Purple
+            </div>
+            <div class="product-price">
+              $309.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Samsung Galaxy A12 128GB Blue" src="images/bluea12.jpg">
+            </div>
+            <div class="product-name">
+              Samsung Galaxy A12 128GB Blue
+            </div>
+            <div class="product-price">
+              $143.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Apple iPhone 13 Pro (128GB) - Sierra Blue" src="images/iphone13problue.jpg">
+            </div>
+            <div class="product-name">
+              Apple iPhone 13 Pro (128GB) - Sierra Blue
+            </div>
+            <div class="product-price">
+              $949.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Google Pixel 3A Iris 64GB" src="images/6apixel.jpg">
+            </div>
+            <div class="product-name">
+              Google Pixel 3A Iris 64GB
+            </div>
+            <div class="product-price">
+              $139.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Nokia G21 64GB - Dusk" src="images/nokiag21.jpg">
+            </div>
+            <div class="product-name">
+              Nokia G21 64GB - Dusk
+            </div>
+            <div class="product-price">
+              $149.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Apple iPhone 13 (128GB) - Blue" src="images/blue13.jpg">
+            </div>
+            <div class="product-name">
+              Apple iPhone 13 (128GB) - Blue
+            </div>
+            <div class="product-price">
+              $724.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="iPhone XR (128GB) - Black" src="images/black12.jpg">
+            </div>
+            <div class="product-name">
+              iPhone XR (128GB) - Black
+            </div>
+            <div class="product-price">
+              $539.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Google Pixel 3A Iris 64GB" src="images/6apixel.jpg">
+            </div>
+            <div class="product-name">
+              Google Pixel 3A Iris 64GB
+            </div>
+            <div class="product-price">
+              $139.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Samsung Galaxy A52s 128 GB Mint" src="images/a52.jpg">
+            </div>
+            <div class="product-name">
+              Samsung Galaxy A52s 128 GB Mint
+            </div>
+            <div class="product-price">
+              $139.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="JETech Silicone Case iPhone 11" src="images/iphone11silicone.jpg">
+            </div>
+            <div class="product-name">
+              JETech Silicone Case iPhone 11
+            </div>
+            <div class="product-price">
+              $9.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Apple AirPods 3rd Gen" src="images/airpods.jpg">
+            </div>
+            <div class="product-name">
+              Apple AirPods 3rd Gen
+            </div>
+            <div class="product-price">
+              $159.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Beats Solo3 Wireless" src="images/beatssolo3.jpg">
+            </div>
+            <div class="product-name">
+              Beats Solo3 Wireless
+            </div>
+            <div class="product-price">
+              $179.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Apple Watch Series 7 Aluminium" src="images/blackseries7.jpg">
+            </div>
+            <div class="product-name">
+              Apple Watch Series 7 Aluminium
+            </div>
+            <div class="product-price">
+              $369.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Apple Watch Series 7 Starlight" src="images/roseseries7.jpg">
+            </div>
+            <div class="product-name">
+              Apple Watch Series 7 Starlight
+            </div>
+            <div class="product-price">
+              $369.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="AGPTEK Wireless Charger" src="images/wirelesscharger.jpg">
+            </div>
+            <div class="product-name">
+              AGPTEK Wireless Charger
+            </div>
+            <div class="product-price">
+              $13.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Sony WH-CH510 Wireless Headphones" src="images/sonywh-ch510.jpg">
+            </div>
+            <div class="product-name">
+              Sony WH-CH510 Wireless Headphones
+            </div>
+            <div class="product-price">
+              $39.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="JETech Screen Protector iPhone 11" src="images/iphonescreenprotect.jpg">
+            </div>
+            <div class="product-name">
+              JETech Screen Protector iPhone 11
+            </div>
+            <div class="product-price">
+              $5.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="Samsung Galaxy Watch4" src="images/samsungwatchblack.jpg">
+            </div>
+            <div class="product-name">
+              Samsung Galaxy Watch4
+            </div>
+            <div class="product-price">
+              $199.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
+          <div class="card">
+            <div class="product-image">
+              <img alt="BEZ Case for Samsung A52S" src="images/galaxya52case.jpg">
+            </div>
+            <div class="product-name">
+              BEZ Case for Samsung A52S
+            </div>
+            <div class="product-price">
+              $7.99
+            </div>
+            <button class="add-to-cart">
+              Add to Cart
+            </button> 
+          </div>
+
         </div>
-        <!-- MY CODE START -->
-        <div id="checkOut" class="col-sm-3" style="display: none;">
-            <h1 
-                style="
-                font-size: 30px;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                text-align: center;
-                "
-            >
-                CHECKOUT
-            </h1>
-            <form>
-            <ul>
+      </div>
+
+
+      <div class="row footer">
+        <div class="col-sm-3 quicklinks-div">
+          <ul class="quicklinks">
+            <li class="quicklinks-title">
+              Quick Links
+            </li>
+            <li><a
+              class="quicklinks-items"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/index.html"
+              >Home</a
+            ></li>
+            <li><a
+              class="quicklinks-items"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/shop.html"
+              >Shop</a
+            ></li>
+            <li><a
+              class="quicklinks-items"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/about.html"
+              >About</a
+            ></li>
+            <li><a
+              class="quicklinks-items"
+              href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/contact.html"
+              >Contact</a
+            ></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 contact-us-footer-div">
+          <ul class="contact-us-list">
+            <li class="contact-us-title">
+              Contact Us
+            </li>
+            <li>
+              <p class="footer-descriptions">Contact us about any enquiries regarding our services, products
+              or any issues you may have.</p>
+            </li>
+            <li>
+              <p class="footer-titles">FIND US AT</p>
+              <p class="footer-descriptions">Brian Statham Way, Old Trafford, Stretford, Manchester M16 0PU</p>
+            </li>
+            <li>
+              <p class="footer-titles">EMAIL ADDRESS:</p>
+              <p class="footer-descriptions">contact@blumobile.co.uk</p>
+            </li>
+            <li>
+              <p class="footer-titles">PHONE NUMBER:</p>
+              <p class="footer-descriptions">0800 111 2222</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 subscribe-footer-div">
+          <form>
+            <ul class="subscribe-list">
               <li>
-                <!-- FOR NAME INPUT -->
-                <input class="input2" type="text" name="name" placeholder="Name" />
+                <p class="subscribe-title">Subscribe to our newsletter</p>
               </li>
               <li>
-                <!-- FOR EMAIL INPUT -->
-                <input class="input2" type="email" name="email" placeholder="Email"/>
-                <br /><br />
-              </li>
-              <li>
-                <!-- FOR ADDRESS INPUT -->
-                <textarea class="textarea2" name="address" placeholder="Address"></textarea>
-              </li>
-              <li>
-                <!-- SUBMIT BUTTON -->
-                <input type="submit" value="Checkout" />
+                <input type="email" placeholder="Email" style="width: 370px;">
+                <input type="submit" value="Go" class="subscribe-submit">
               </li>
             </ul>
           </form>
         </div>
-        <div class="col-sm-4">
-          <div>
-            <!-- SHOWCASING PRODUCTS AND SOME DISCOUNTS -->
-            <img
-              class="promo"
-              alt="Awesome Gifts To Take Home"
-              src="images/samsung.gif"
-            />
-            <img class="promo" alt="iPhone" src="images/iphone.gif" />
-            <img class="promo" alt="Huawei" src="images/huawei.gif" />
-            <img
-              class="promo"
-              alt="Save Uo To 20%"
-              src="images/beatssale.jpg"
-            />
-            <img
-              class="promo"
-              alt="Solo Wireless Support"
-              src="images/solo-wireless-global-og-image.jpg"
-            />
-            <img class="promo" alt="iWatch" src="images/applewatchthree.jpg" />
-            <img
-              class="promo"
-              alt="Rethink Your Style"
-              src="images/huaweipromo.jpg"
-            />
-          </div>
-        </div>
-        <hr />
       </div>
-      <div class="row">
-        <div class="footer">
-          <p class="footerdetails">
+      <div class="row footer">
+        <div class="copyright-footer">
+          <p class="copyright">
             Copyright &copy; 2022 Blu Mobile Inc. All rights reserved.
           </p>
         </div>

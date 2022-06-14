@@ -1,16 +1,100 @@
 /* EVERYTHING IS MY CODE EXCEPT THE ONES I SPECIFIED ARE FROM A REFERENCED WEBSITE */
-.container{
+.container-fluid{
     background-color:lightgray;
     height: auto;
     width: 100%;
 }
 
-.row{
+.header{
     height: auto;
     width: auto;
-    background-color: lightgray;
-
+    background-color: #E0E0E0;
+    border-bottom: 1px solid lightgray;
+    overflow: hidden;
 }
+
+.list-logo{
+    height: 30px;
+    float: left;
+    transition-duration: 0.5s;
+}
+
+.small-nav-header{
+    overflow: hidden;
+}
+
+.small-cart-logo{
+    height: 35px;
+    float: right;
+    transition-duration: 0.5s;
+}
+
+.small-cart-logo:hover{
+    height: 38px;
+}
+
+
+.small-cart{
+    float: right;
+}
+
+.small-nav-header .sub-content{
+    display: none;
+    z-index: 1;
+}
+
+.small-nav-header:hover .sub-content{
+    display: block;
+}
+
+.sub-menu{
+    max-width: 100%;
+    background-color: lightgray;
+    border: 1.5px solid #174b86;
+    border-radius: 3px;
+    box-shadow: 0px 2px 10px #0c1826;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    position:absolute;
+    top: 110px;
+    padding: 0.5em;
+}
+
+.sub-menu-items{
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    color: #174b86;    
+}
+
+.sub-menu-items:hover{
+    color: whitesmoke;
+}
+
+.body{
+    height: auto;
+    width: auto;
+    background-color: #E0E0E0;
+    border-bottom: 1px solid lightgray;
+}
+
+.shop-page-body{
+    height: auto;
+    width: auto;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 3em;
+}
+
+.footer{
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+    border-bottom: 1px solid lightgray;
+}
+
+
 
 .col{
     background-color: #f6f6f6;
@@ -30,18 +114,115 @@
     height: 550px;
 }
 
-.footer{
-    width: 100%;
-    height: 50px;
-    background-color:lightgray;
-    margin-top: 0px;
+.quicklinks-div{
+    background-color: whitesmoke;
 }
 
-.footerdetails{
+.quicklinks{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.quicklinks-title{
+    color: black;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quicklinks-items{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.contact-us-footer-div{
+    background-color: whitesmoke;
+}
+
+.contact-us-list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.contact-us-title{
+    color: black;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-titles{
+    font-weight: bold;
+}
+
+.footer-descriptions{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.subscribe-footer-div{
+    background-color: whitesmoke;
+    margin-left: -1em;
+}
+
+.subscribe-list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 58px;
+}
+
+.subscribe-title{
+    color: black;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subscribe-submit[type=submit]{
+    border: 2px solid #174b86;
+    color: white;
+    transition-duration: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    background-color: #174b86;
+    padding:0.6em 1em;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 90px;
+}
+
+.subscribe-submit:hover[type=submit]{
+    background-color: white;
+    color: #174b86;
+    box-shadow: 0 12px 16px 0 #527db2, 0 17px 50px 0 #b8d3f1;
+}
+
+.copyright-footer{
+    width: 100%;
+    height: 100px;
+    background-color:whitesmoke;
+    margin-top: 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+.copyright{
     text-align: center;
     position: relative;
-    top: 0px;
-    color:#174b86
+    color: greyS;
+    font-size: 13px;
+    position: relative;
+    top: 40%;
 }
 /* LOGO AND LOGO TEXT */
 .logo{ 
@@ -58,7 +239,7 @@
 
 .logotext{
     font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
     font-weight:600;
     color: #174b86;
     position: relative;
@@ -69,131 +250,237 @@
 a:link{
     text-decoration: none;
 }
+
 /* NAVICGATION MENU CONTENTS */
-.hometext{
+.navbar{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navitems{
     font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
     font-weight:600;
     color: #174b86;
+    transition-duration: 0.5s;
     /* PADDING-LEFT FEATURE TO SHIFT IT TO THE RIGHT TO AVOID BEING TOO CLOSE TO THE LOGO */
-    padding-left: 10%;
     position: relative;
-    top: 5px;
+    top: 20px;
 }
 
-.shoptext{
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:600;
-    color: #174b86;
-    padding-left: 5%; /* FOR MAINTAINING A GOOD AND EQUAL SPACE BETWEEN THE TEXTS */
-    position: relative;
-    top: 5px;
+.navitems:hover{
+    color: royalblue;
 }
 
-.aboutustext{
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:600;
-    color: #174b86;
-    padding-left: 5%; /* FOR MAINTAINING A GOOD AND EQUAL SPACE BETWEEN THE TEXTS */
-    position: relative;
-    top: 5px;
+.navicons{
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.5s;
 }
 
-.contactustext{
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:600;
-    color: #174b86;
-    padding-left: 6%; /* FOR MAINTAINING A GOOD AND EQUAL SPACE BETWEEN THE TEXTS */
-    position: relative;
-    top: 5px;
+.navicons:hover{
+    height: 43px;
 }
+
+@media screen and (max-width: 576px) { 
+    .icon-header, .navbar-header{ 
+      display: none; 
+      border-bottom: 0px solid lightgray;
+    } 
+
+    .small-nav-header, .small-cart{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 576px){
+    .small-nav-header,.small-cart{
+        display: none;
+    }
+}
+
+/* HOME BODY */
+
+.shopnow-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.shopnow-button{
+    border: 1px solid #174b86;
+    color: white;
+    transition-duration: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    background-color: #174b86;
+    padding:0.6em 1em;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0px;
+    line-height:1;
+    width: 200px;
+    height: 50px;
+
+}
+
+@media(max-width:500px) {
+    .shopnow-button {height: 35px; width: 100px; font-size: 10px;}
+  }
   
-.homeimages{
+.shopnow-button:hover{
+    background-color: white;
+    color: #174b86;
+    box-shadow: 0 12px 16px 0 #182638, 0 17px 50px 0 #132438;
+}
+
+.mainimage-div{
+    background-color: white;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom:30px;
+    }
+
+.mainimage{
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
-    position: relative; 
-    width: 100%;
+    max-width: 88%;
+    height: auto;
+    width: auto;
+    margin-bottom: 50px ;
 }
 
-.promo{
-    width: 300px;
-    margin: 45px 40px;
+.featured-products-div{
+    background-color: white;
+    height: auto;
+    padding-bottom: 60px;
 }
 
-/* SHOP TABLE */
-table{
-    border: 2px solid whitesmoke;
-    width: 100%;
-    margin: 20px 0px;
+.featured-products-title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-bottom: 40px;
 }
 
-.phones{
+.featured-products-list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.home-products{
     height: 150px;
     padding-left: 0px;
-    /* STYLES BELOW FROM "https://www.w3schools.com/howto/howto_css_image_center.asp" FOR CENTERING IMAGE */   
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.phonebox{
-    background-color: whitesmoke;
-    width: 30%;
+.items{
+    display: inline-block;
 }
 
-.descriptionbox{
-    width: 70%;
+.home-product-description{
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+
+.home-price{
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* SHOP TABLE */
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 1em;
+}
+
+.product-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.product-container .card {
     background-color: white;
-}
-
-.results{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: relative;
-    top: 20px;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 15px 5px #b8d3f1;
     text-align: center;
 }
 
-.description{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: -30px;
-    margin-left: 10px;
+.card img{
+    max-width: 100%;
+    margin-top: 1em;
 }
 
-.price{
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 10px;
+.card .product-price{
+    margin-bottom: 2.2em;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0.5em;
 }
 
-.addtocart{
-    margin-left: 10px;
+.card .product-name{
+    font-size: 13px;
+    font-weight: 500; 
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.add-to-cart{
     background-color: #174b86;
-    border-radius: 20px;
+    border-radius: 3px;
     border: 2px solid #174b86;
     color: white;
     padding: 5px 15px;
     text-align: center;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
+    width: 90%;
+    position: absolute;
+    bottom: 0px;
+    margin-left: -5px;
+    margin-bottom: 1em;
 }
 
-.addtocart:hover{
-    background-color: white;
+.add-to-cart:hover{
+    background-color: whitesmoke;
     color: #174b86;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 #527db2, 0 17px 50px 0 #b8d3f1;
 }
 
 /* INFORMATION ABOUT BLU MOBILE */
 
 .aboutusinfo{
     font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
     font-weight: 300;
     text-align: center;
     position: relative;
@@ -203,7 +490,7 @@ table{
 /* CONTACT PAGE EMAIL */
 
 .contact{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
     font-size: 40px;
     position: relative;
     top: 15px;
@@ -258,12 +545,12 @@ textarea {
 
 input[type=submit]{
     background-color: #174b86;
-    border-radius: 20px;
+    border-radius: 3px;
     border: 2px solid #174b86;
     color: white;
     padding: 5px 25px;
     text-align: center;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -271,15 +558,15 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-    background-color: white;
+    background-color: whitesmoke;
     color: #174b86;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 #527db2, 0 17px 50px 0 #b8d3f1;
 }
 
 /* SENT MESSAGE AFTER FORM SUBMISSION */
 
 .senttext{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
     font-weight: 300;
     font-size: 30px;
     text-align: center;
@@ -330,7 +617,7 @@ input[type=submit]:hover{
     text-align:left;
     padding:0.25em 1em;
     border-bottom:1px solid whitesmoke;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
     font-size: 20px;
 }
 /* END */
@@ -376,12 +663,12 @@ input[type=submit]:hover{
 
 .input2[type=submit]{
     background-color: #174b86;
-    border-radius: 20px;
+    border-radius: 3px;
     border: 2px solid #174b86;
     color: white;
     padding: 5px 25px;
     text-align: center;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -389,7 +676,7 @@ input[type=submit]:hover{
 }
 
 .input2[type=submit]:hover{
-    background-color: white;
+    background-color: whitesmoke;
     color: #174b86;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 #527db2, 0 17px 50px 0 #b8d3f1;
 }
