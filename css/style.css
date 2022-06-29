@@ -101,11 +101,6 @@
     width: 100%;
 }
 
-.aboutbody{
-    background-color: #f6f6f6;
-    width: 100%;
-    height: 1000px;
-}
 
 .contactbody{
     background-color:#f6f6f6;
@@ -477,14 +472,22 @@ a:link{
 }
 
 /* INFORMATION ABOUT BLU MOBILE */
+.about{
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+    border-bottom: 1px solid lightgray;
+}
 
-.aboutusinfo{
+.about-div{
+    background-color: black;
+    height: auto;
+}
+
+.about-us{
     font-size: 30px;
     font-family: 'Trebuchet MS';
-    font-weight: 300;
     text-align: center;
-    position: relative;
-    top: 30px;
 }
 
 /* CONTACT PAGE EMAIL */

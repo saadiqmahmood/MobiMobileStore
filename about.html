@@ -21,54 +21,158 @@
   </head>
     <!-- MY CODE START -->
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-sm-4 logo-header">
           <!-- LOGO AND LOGO TEXT -->
           <h1 class="logotext">BLU MOBILE</h1>
           <a
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/index.html"
+            href="index.html"
           >
             <img alt="Blu Mobile Logo" class="logo" src="images/logo.png" />
           </a>
         </div>
-        <div class="col-sm-8">
-          <a
-            class="hometext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/index.html"
-            >HOME</a
-          >
-          <a
-            class="shoptext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/shop.html"
-            >SHOP</a
-          >
-          <a
-            class="aboutustext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/about.html"
-            >ABOUT</a
-          >
-          <a
-            class="contactustext"
-            href="file:///C:/Users/Saadiq%20Mahmood/Desktop/WEB/contact.html"
-            >CONTACT</a
-          >
+        <div class="col-sm-5 navbar-header">
+          <ul class="navbar">
+            <li><a
+              class="navitems"
+              href="index.html"
+              >HOME</a
+            ></li>
+            <li><a
+              class="navitems"
+              href="shop.html"
+              >SHOP</a
+            ></li>
+            <li><a
+              class="navitems"
+              href="about.html"
+              >ABOUT</a
+            ></li>
+            <li><a
+              class="navitems"
+              href="contact.html"
+              >CONTACT</a
+            ></li>
+        </ul>
+        </div>
+        <div class="col-sm-3 icon-header">
+          <a href="">
+            <img class="navicons" src="images/cart.png" alt="shoppping cart">
+          </a>
+        </div>
+        <div class="col-6 small-nav-header">
+            <a href="">
+              <img src="images/dropdown.png" alt="dropdown list menu" class="list-logo">
+            </a>
+            <div class="sub-content">
+              <ul class="sub-menu">
+                <li><a
+                  class="sub-menu-items"
+                  href="index.html"
+                  >HOME</a
+                ></li>
+                <li><a
+                  class="sub-menu-items"
+                  href="shop.html"
+                  >SHOP</a
+                ></li>
+                <li><a
+                  class="sub-menu-items"
+                  href="about.html"
+                  >ABOUT</a
+                ></li>
+                <li><a
+                  class="sub-menu-items"
+                  href="contact.html"
+                  >CONTACT</a
+                ></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-6 small-cart">
+          <a href="">
+            <img src="images/cart.png" alt="second shopping cart" class="small-cart-logo">
+          </a>
         </div>
       </div>
-      <div class="row">
-        <div class="aboutbody">
-          <p class="aboutusinfo">
+      <div class="row about">
+        <div class="about-div">
+          <p class="about-us">
             Blu Mobile is a new website created in April 2022 that retails
             iPhone, Samsung, Huawei, Nokia, Pixel phones which can be found at
             "SHOP" just above. We also have accessories like smartwatches,
             headphones and more.
           </p>
         </div>
-        <hr />
       </div>
-      <div class="row">
-        <div class="footer">
-          <p class="footerdetails">
+      <div class="row footer">
+        <div class="col-sm-3 quicklinks-div">
+          <ul class="quicklinks">
+            <li class="quicklinks-title">
+              Quick Links
+            </li>
+            <li><a
+              class="quicklinks-items"
+              href="index.html"
+              >Home</a
+            ></li>
+            <li><a
+              class="quicklinks-items"
+              href="shop.html"
+              >Shop</a
+            ></li>
+            <li><a
+              class="quicklinks-items"
+              href="about.html"
+              >About</a
+            ></li>
+            <li><a
+              class="quicklinks-items"
+              href="contact.html"
+              >Contact</a
+            ></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 contact-us-footer-div">
+          <ul class="contact-us-list">
+            <li class="contact-us-title">
+              Contact Us
+            </li>
+            <li>
+              <p class="footer-descriptions">Contact us about any enquiries regarding our services, products
+              or any issues you may have.</p>
+            </li>
+            <li>
+              <p class="footer-titles">FIND US AT</p>
+              <p class="footer-descriptions">Brian Statham Way, Old Trafford, Stretford, Manchester M16 0PU</p>
+            </li>
+            <li>
+              <p class="footer-titles">EMAIL ADDRESS:</p>
+              <p class="footer-descriptions">contact@blumobile.co.uk</p>
+            </li>
+            <li>
+              <p class="footer-titles">PHONE NUMBER:</p>
+              <p class="footer-descriptions">0800 111 2222</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 subscribe-footer-div">
+          <form>
+            <ul class="subscribe-list">
+              <li>
+                <p class="subscribe-title">Subscribe to our newsletter</p>
+              </li>
+              <li>
+                <input type="email" placeholder="Email" style="width: 370px;">
+                <input type="submit" value="Go" class="subscribe-submit">
+              </li>
+            </ul>
+          </form>
+        </div>
+      <div class="row footer">
+        <div class="copyright-footer">
+          <p class="copyright">
             Copyright &copy; 2022 Blu Mobile Inc. All rights reserved.
           </p>
         </div>
